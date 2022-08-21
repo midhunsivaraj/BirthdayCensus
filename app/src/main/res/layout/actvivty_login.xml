@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".activity.ActivityLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".65"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imgForward"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"/>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_toRightOf="@+id/imgForward"
+            style="@style/SignUp.Button.Style"
+            android:textSize="15sp"
+            android:text="Sign Up"/>
+
+
+        <ImageButton
+            android:layout_toLeftOf="@+id/btnTwitterLogin"
+            android:id="@+id/btnFacebookLogin"
+
+            android:layout_marginRight="@dimen/default_gap"
+            android:background="@drawable/white_button"
+            style="@style/login.Image.Button.Style"
+            android:src="@drawable/ic_facebook"/>
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnTwitterLogin"
+
+            android:background="@drawable/white_button"
+            style="@style/login.Image.Button.Style"
+            android:src="@drawable/ic_twitter"/>
+
+        <TextView
+            android:id="@+id/lblLogin"
+            android:layout_marginTop="60dp"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_below="@+id/imgForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="EMAIL"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_above="@+id/txtPassword"
+            android:background="@null"/>
+
+        <EditText
+            android:layout_above="@+id/btnCountry"
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="PASSWORD"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/btnCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="FORGOT?"
+            android:textStyle="bold"
+            android:minHeight="35dp"
+            android:gravity="left|bottom"
+            android:textColor="@color/red_button_text_color"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".33"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            style="@style/Ok.Button.style"
+            android:id="@+id/btnOk"
+            android:text="OK"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnSkip"
+            style="@style/Skip.Button.style"
+            android:text="Skip"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="© Birthday census all right reserved"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="any kind of reproduction will be subjected to legal action under the copyright act"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11sp"/>
+
+</LinearLayout>

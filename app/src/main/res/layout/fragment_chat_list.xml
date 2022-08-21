@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/imgToggleNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_arrow_left" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CHAT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center"
+        android:text="NO CHATS"
+        android:layout_below="@+id/toolbarHolder"
+        android:id="@+id/lblnoChat"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/toolbarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chatList"
+        />
+
+</RelativeLayout>

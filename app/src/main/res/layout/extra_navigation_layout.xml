@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+
+
+
+    <ImageView
+        android:id="@+id/imgPropicHalo"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/circle_layers"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgNavigationProPic"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/propic"
+        app:civ_border_color="@color/colorPrimaryText"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@color/colorPrimaryText"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/imgNavigationProPic"
+        android:layout_marginBottom="33dp"
+        android:layout_toRightOf="@+id/imgNavigationProPic"
+        android:background="@android:color/white"/>
+
+
+    <TextView
+        android:id="@+id/lblNavigationUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgNavigationProPic"
+        android:layout_marginBottom="@dimen/default_gap"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_toLeftOf="@+id/line"
+        android:text="SONY RAJ"
+        android:textStyle="bold"/>
+    <!--
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgNavigationProPic"
+            app:menu="@menu/nav_menu"
+            android:background="@drawable/transparent"
+            android:layout_margin="@dimen/default_gap">
+
+        </android.support.design.widget.NavigationView>-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblNavigationUserName"
+        android:layout_marginTop="@dimen/default_gap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp">
+
+                <RadioButton
+                    android:id="@+id/rdoDashBoard"
+                    tools:checked="true"
+                    style="@style/radio.button.style.navigation"
+                    android:text="DASHBOARD"/>
+
+                <RadioButton
+                    android:id="@+id/rdoDiscover"
+                    style="@style/radio.button.style.navigation"
+                    android:text="DISCOVER"/>
+
+                <RadioButton
+                    android:id="@+id/rdoBM"
+                    style="@style/radio.button.style.navigation"
+                    android:text="BIRTHMATES"/>
+
+                <RadioButton
+                    android:id="@+id/rdoLive"
+                    style="@style/radio.button.style.navigation"
+                    android:text="LIVE STREAM"/>
+
+                <RadioButton
+                    android:id="@+id/rdoFavourites"
+                    style="@style/radio.button.style.navigation"
+                    android:visibility="gone"
+                    android:text="FAVOURITES"/>
+
+                <RadioButton
+                    android:id="@+id/rdoChats"
+                    style="@style/radio.button.style.navigation"
+                    android:text="CHATS"/>
+
+                <RadioButton
+                    android:id="@+id/rdoNotifications"
+                    style="@style/radio.button.style.navigation"
+                    android:visibility="gone"
+                    android:text="NOTIFICATIONS"/>
+
+                <RadioButton
+                    android:id="@+id/rdoPreferences"
+                    style="@style/radio.button.style.navigation"
+                    android:text="PREFERENCES"/>
+
+                <RadioButton
+                    android:id="@+id/rdoLogout"
+                    style="@style/radio.button.style.navigation"
+                    android:text="LOGOUT"/>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".activity.ActivityLogin">
+
+    <LinearLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+        <ImageButton
+            android:id="@+id/imgForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_right" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginLeft="8dp"
+            style="@style/SignUp.Button.Style"
+            android:layout_toRightOf="@+id/imgForward"
+            android:text="Login" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnFacebookLogin"
+            style="@style/login.Image.Button.Style"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@+id/btnTwitterLogin"
+            android:background="@drawable/white_button"
+            android:src="@drawable/ic_facebook"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btnTwitterLogin"
+            style="@style/login.Image.Button.Style"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_button"
+            android:src="@drawable/ic_twitter"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:layout_weight=".76">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/sign_up_padding_left">
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+
+        <TextView
+            android:id="@+id/lblLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/txtName"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:hint="@string/name"
+            android:textSize="@dimen/login_signup_text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:hint="@string/email"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/login_signup_text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:hint="@string/password"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:textSize="@dimen/login_signup_text_size"
+            android:textStyle="bold" />
+
+        <!--<mateflicks.BirthDayDateSelector
+            android:id="@+id/txtDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/date_of_birth"
+            android:textStyle="bold" />-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/txtDob"
+            android:minHeight="0dp"
+            android:hint="@string/date_of_birth"
+            android:gravity="left|center_vertical"
+            android:textStyle="bold"
+            android:focusable="false"
+            android:textSize="@dimen/login_signup_text_size"
+            android:background="@null"/>
+
+
+        <EditText
+            android:id="@+id/btnCountry"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:hint="@string/country"
+            android:focusable="false"
+            android:textSize="@dimen/login_signup_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/sign_up_padding_left"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/btnOkSignup"
+            style="@style/Ok.Button.style"
+            android:text="OK" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/Skip.Button.style"
+            android:text="Skip" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/sign_up_padding_left"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="© MateFlick all right reserved"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/sign_up_padding_left"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="any kind of reproduction will be subjected to legal action under the copyright act"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp" />
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="radio.button.style.navigation" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:background">@drawable/checked_state_drawable</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_width">195dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/checked_state_text_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="radio.button.style.tabs" parent="@style/radio.button.style.navigation">
+        <item name="android:background">@drawable/tabs_background_drawable</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/default_gap</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="radio.button.style.tabs.0width" parent="radio.button.style.tabs">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="chat.button.style.tabs" parent="@style/radio.button.style.navigation">
+        <item name="android:background">@drawable/chat_tab_drawable</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red_button_text_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/default_gap</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="Button.Style.Base" parent="AppTheme">
+        <item name="android:radius">@dimen/corner.radius</item>
+        <item name="customFont">birthday.ttf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/bDayTextSize</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Button.With.Red.Text" parent="Button.Style.Base">
+        <item name="android:background">@drawable/white_button</item>
+        <item name="android:textColor">@color/white_button_text_color</item>
+    </style>
+
+    <style name="Button.With.White.Text.Primary.Dark.Background" parent="Button.Style.Base">
+        <item name="android:background">@drawable/red_button</item>
+        <item name="android:textColor">@color/red_button_text_color</item>
+    </style>
+
+    <style name="Button.With.Red.Text.Primary.Background" parent="Button.Style.Base">
+        <item name="android:background">@drawable/red_button</item>
+        <item name="android:textColor">@color/red_button_text_color</item>
+    </style>
+
+    <style name="Ok.Button.style" parent="Button.With.White.Text.Primary.Dark.Background">
+        <item name="android:layout_width">@dimen/round.button.width.height</item>
+        <item name="android:layout_height">@dimen/round.button.width.height</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="login.Image.Button.Style" parent="Ok.Button.style">
+        <item name="android:background">@drawable/white_button</item>
+        <item name="android:layout_width">@dimen/round.button.width.height</item>
+        <item name="android:layout_height">@dimen/round.button.width.height</item>
+    </style>
+
+    <style name="Skip.Button.style" parent="Ok.Button.style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:background">@drawable/red_button_with_rounded_corner</item>
+    </style>
+
+    <style name="SignUp.Button.Style" parent="Skip.Button.style">
+        <item name="android:background">@drawable/white_button_with_rounded_corner</item>
+        <item name="android:textColor">@color/white_button_text_color</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+
+    <style name="Birthday.no.network.style" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Birthday.dialog.style" parent="Birthday.no.network.style">
+
+    </style>
+
+    <style name="bDaySelectorTextStyle">
+        <item name="android:textSize">@dimen/bDayTextSize</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/date_bg</item>
+        <item name="android:drawablePadding">@dimen/activity_horizontal_margin</item>
+        <item name="android:drawableTop">@drawable/up</item>
+        <item name="android:drawableBottom">@drawable/down</item>
+        <item name="android:layout_width">@dimen/date_item_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

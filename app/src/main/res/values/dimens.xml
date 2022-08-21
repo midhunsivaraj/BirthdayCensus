@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+
+    <dimen name="corner.radius">10dp</dimen>
+    <dimen name="round.button.width.height">35dp</dimen>
+    <dimen name="date_corner_radius">5dp</dimen>
+    <dimen name="date_item_width">72dp</dimen>
+    <dimen name="bDayTextSize">14sp</dimen>
+    <dimen name="login_signup_text_size">20sp</dimen>
+    <dimen name="chat_text_size">15sp</dimen>
+    <dimen name="sign_up_padding_left">30dp</dimen>
+
+</resources>

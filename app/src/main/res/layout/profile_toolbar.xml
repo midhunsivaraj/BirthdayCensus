@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    app:layout_collapseMode="pin"
+    >
+
+    <RelativeLayout
+        android:id="@+id/imgToolbarContent"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgToolbarProfilePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            android:src="@drawable/propic"/>
+
+        <TextView
+            android:id="@+id/lblToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/imgToolbarProfilePic"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:text="Sony Raj"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+<!--
+        <RadioGroup
+            android:layout_below="@+id/imgToolbarProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/rdoToolbarAbout"
+                style="@style/radio.button.style.tabs"
+                android:button="@null"
+                android:checked="true"
+                android:text="About"/>
+
+            <RadioButton
+                android:id="@+id/rdoToolbarWishlist"
+                style="@style/radio.button.style.tabs"
+                android:button="@null"
+                android:text="Wishlist"/>
+
+            <RadioButton
+                android:id="@+id/rdoToolbarFriends"
+                style="@style/radio.button.style.tabs"
+                android:button="@null"
+                android:text="Friends"/>
+        </RadioGroup>-->
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

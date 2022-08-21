@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+
+
+            <ImageButton
+                android:id="@+id/imgToggleNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_gap"
+                android:background="@drawable/transparent"
+                android:src="@drawable/ic_arrow_left" />
+
+
+            <TextView
+                android:id="@+id/lblUserName09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="lblUsername"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/chatMessages"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/divider"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/default_gap"
+            android:hint="Message"
+            android:id="@+id/txtMessage"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/default_gap"
+            android:src="@drawable/ic_send"
+            android:background="@drawable/red_button_with_rounded_corner"/>
+
+        <ImageButton
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/default_gap"
+            android:src="@drawable/ic_mic"
+            android:background="@drawable/red_button_with_rounded_corner"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

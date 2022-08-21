@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/navMenu">
+    <item android:id="@+id/mnuDashboard" android:title="DASHBOARD"/>
+    <item android:id="@+id/mnuDiscover" android:title="DISCOVER"/>
+    <item android:id="@+id/mnuLiveStream" android:title="LIVE STREAM"/>
+    <item android:id="@+id/mnuFavourites" android:title="FAVOURITES"/>
+    <item android:id="@+id/mnuChat" android:title="CHAT"/>
+    <item android:id="@+id/mnuNotifications" android:title="NOTIFICAIONS"/>
+    <item android:id="@+id/mnuPreferences" android:title="PREFERENCES"/>
+    </group>
+</menu>

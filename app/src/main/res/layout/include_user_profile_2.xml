@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <!--<ImageView
+        android:layout_below="@+id/topHolder"
+        android:id="@+id/imgTabSelector"
+        android:layout_marginTop="-150dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/circle_layers"
+        />
+-->
+
+    <RelativeLayout
+        android:id="@+id/topHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCoverImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/image" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            tools:src="@drawable/propic"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            app:civ_border_overlay="true"
+            app:civ_fill_color="#fff"/>
+
+        <TextView
+            android:id="@+id/lblUserName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProPic"
+            android:layout_centerHorizontal="true"
+            android:longClickable="true"
+            tools:text="Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnEditCover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:src="@drawable/ic_mode_edit_black_18dp" />
+
+        <!--<Button
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblUserName"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_button_with_rounded_corner"
+            android:minHeight="0dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="chat"
+            android:textAllCaps="true"
+            android:textColor="@color/white_button_text_color"/>-->
+
+        <ImageButton
+            android:id="@+id/imgToggleNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_arrow_left" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topHolder">
+
+        <RadioGroup
+            android:id="@+id/rdoGrpUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/rdoAbout"
+                style="@style/radio.button.style.tabs"
+                android:button="@null"
+                android:text="About"
+                tools:checked="true" />
+
+            <!--<RadioButton
+                android:id="@+id/rdoWishlist"
+                style="@style/radio.button.style.tabs"
+                android:button="@null"
+                android:text="Wishlist" />-->
+
+            <RadioButton
+                android:id="@+id/rdoFriends"
+                style="@style/radio.button.style.tabs"
+                android:button="@null"
+                android:text="Friends" />
+        </RadioGroup>
+
+        <!--<FrameLayout
+            android:id="@+id/fragmentHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rdoGrpUserProfile">
+
+        </FrameLayout>-->
+
+        <ImageView
+            android:id="@+id/imgTabSelector"
+            android:layout_width="450dp"
+
+            android:layout_height="350dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/circle_layers" />
+
+    </RelativeLayout>
+    <!--<include layout="@layout/profile_toolbar"/>-->
+</RelativeLayout>

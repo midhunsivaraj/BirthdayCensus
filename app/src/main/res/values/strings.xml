@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MateFlick</string>
+    <string name="about"><![CDATA[I put effort into aht ai wear, train and eat well.
+        A Cinephile and Bibliophile… Self esteem &
+        incentive are what is important. Big fan of brilliant personalities and
+        master conversationalists who know what they are doing with their life.
+    ]]></string>
+    <string name="title1">title 1</string>
+    <string name="title2">Title2</string>
+    <string name="fbID">884791054998744</string>
+    <string name="map_key">AIzaSyD-pjpOpoSfir3yoWH8cPwOa3Kdbqc86h8</string>
+    <string name="base_url">http://bdc.mod.bz/</string>
+    <string name="network_error_message">Network error occurred. Please try again later.</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="date_of_birth">DATE OF BIRTH</string>
+    <string name="country">COUNTRY</string>
+</resources>

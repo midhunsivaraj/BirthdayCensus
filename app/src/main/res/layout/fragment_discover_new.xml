@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/rrgp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbarHolder"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="120dp">
+
+
+        <RadioButton
+            android:id="@+id/rdoLive"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_round_drawable"
+            android:textColor="@color/checked_state_text_color"
+            android:padding="8dp"
+            android:gravity="center"
+            android:checked="true"
+            android:button="@null"
+            android:textSize="11dp"
+            android:text="LIVE"/>
+
+        <RadioButton
+            android:id="@+id/rdoWatched"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/right_round_drawable"
+            android:textColor="@color/checked_state_text_color"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="11dp"
+            android:button="@null"
+            android:text="RECENT"
+            android:duplicateParentState="true" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/toolbarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/imgToggleNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            android:background="@drawable/transparent"
+            android:src="@drawable/ic_arrow_left" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="DISCOVER"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rrgp"
+        android:id="@+id/discoverList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+
+</RelativeLayout>

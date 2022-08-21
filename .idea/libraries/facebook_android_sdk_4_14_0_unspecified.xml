@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="facebook-android-sdk-4.14.0-unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/BirthdayCensus/facebook-android-sdk-4.14.0/unspecified/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/BirthdayCensus/facebook-android-sdk-4.14.0/unspecified/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

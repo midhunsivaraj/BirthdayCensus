@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/colorPrimaryLight" />
+            <corners
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp"
+                android:topLeftRadius="@dimen/date_corner_radius"
+                android:topRightRadius="@dimen/date_corner_radius" />
+            <size android:width="@dimen/date_item_width" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_arrow_drop_up_black_48dp"
+        android:gravity="center" />
+
+
+</layer-list>

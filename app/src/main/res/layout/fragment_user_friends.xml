@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="0 FRIENDS"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/default_gap"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:hint="Search..."
+            android:textColor="#2d2d2d"
+            android:textColorHint="#2d2d2d"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="5dp"
+            android:background="@drawable/search_background"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

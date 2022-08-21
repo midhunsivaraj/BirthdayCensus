@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.test.mateflick.activity.ActivityBirthmates">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/rel1">
+
+        <ImageButton
+            android:id="@+id/imgToggleNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            android:background="@drawable/transparent"
+            android:visibility="invisible"
+            android:src="@drawable/ic_arrow_left" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LIVESTREAM"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rel1"
+        android:id="@+id/relativeLayout">
+
+        <VideoView
+            android:id="@+id/CameraView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_play" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="EVENT NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:textSize="18dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/lblLiveStreamFavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@drawable/ic_favorite_new_r"
+        android:layout_toLeftOf="@+id/lblLiveStreamFavouritesComment"
+        android:text="0"
+        android:visibility="invisible"
+        android:drawablePadding="@dimen/default_gap"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/lblLiveStreamFavouritesComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_comment_new_r"
+        android:drawablePadding="@dimen/default_gap"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/textView2"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        android:textSize="15sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/lblLiveStreamFavouritesComment"
+        android:layout_above="@+id/editText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/discoverList2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text=""
+        android:hint="   ADD A COMMENT"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText"
+        android:layout_toStartOf="@+id/button2"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:text="SEND"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignTop="@+id/editText"
+        android:background="#ffffff"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button2" />
+
+
+</RelativeLayout>
